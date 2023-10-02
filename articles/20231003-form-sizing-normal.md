@@ -5,6 +5,7 @@ type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["form-sizing", "CSS", "Web仕様眺め👀"]
 publication_name: "overflow_offers"
 published: true
+published_at: 2023-10-03 09:00
 ---
 
 [Offers](https://offers.jp/) を運営している株式会社 [overflow](https://overflow.co.jp/) の [あほむ](https://twitter.com/ahomu) でございます。
@@ -29,7 +30,7 @@ https://github.com/tkent-google/explainers/blob/main/form-sizing.md
 
 これは弊社サービスの [Offers](https://offers.jp/lp) で使われている箇所の例です。
 
-![入力量に応じて高さが可変するテキストエリアの例](/images/22230928-form-sizing-normal/textarea-auto-grow.gif)
+![入力量に応じて高さが可変するテキストエリアの例](/images/20231003-form-sizing-normal/textarea-auto-grow.gif)
 
 ついつい泥臭い実装を思い浮かべてしまいがちですが、[`lh` で表現するアイディア?](https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1295227946) も議論されている issue にコメントがついていてナルホドと思ったりもしました。
 
@@ -73,7 +74,7 @@ https://twitter.com/int32_t/status/1705003314218475884
 explainer も Chrome での実装も (おそらく) Google Japan の Kent Tamura さんのようです。
 せっかくなので手元でも最新の Canary を開いて Codepen でインスタントに試してみました。
 
-![Codepen に example のコードを張り付けて、期待通りに表示されているスクリーンショット](/images/22230928-form-sizing-normal/form-sizing-canary-codepen.png)
+![Codepen に example のコードを張り付けて、期待通りに表示されているスクリーンショット](/images/20231003-form-sizing-normal/form-sizing-canary-codepen.png)
 
 こんな感じですね。前述の 1 つめと 2 つめの `<textarea>` の表示のされ方の違いも分かります。
 
