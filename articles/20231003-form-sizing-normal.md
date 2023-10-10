@@ -44,6 +44,12 @@ https://github.com/tkent-google/explainers/blob/main/form-sizing.md
 
 https://github.com/w3c/csswg-drafts/issues/7552
 
+# 2023.10.10 追記 `form-sizing: fixed | content`
+
+紹介したそばから `normal` → `fixed` 、 `auto` → `content` に変更されていました。([IRCログ](https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1747803316)) 次項のサンプルコードは`normal | auto` のままですが使い方自体は変更されていないようです。
+
+`form-sizing` ではなく `field-sizing` というプロパティ名への変更も提案されていてポジティブな流れなので、そのうちこれも変更されるかもしれません。テーマ通りいかにも時期尚早な紹介といったオチでした。:)
+
 # 本稿執筆時点で提案されている API
 
 以下のサンプルコードは [explainers/form-sizing.md at main · tkent-google/explainers](https://github.com/tkent-google/explainers/blob/main/form-sizing.md) からの引用です。
