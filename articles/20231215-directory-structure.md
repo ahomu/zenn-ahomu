@@ -1,5 +1,5 @@
 ---
-title: "Web フロントエンドの新規コードベースと推しディレクトリ構造 | Offers Tech Blog"
+title: "Web フロントエンドの推しディレクトリ構成と Next.js App Router なコードベース | Offers Tech Blog"
 emoji: "🌳"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["monorepo", "frontend", "nextjs", "turborepo", "architecture"]
