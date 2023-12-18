@@ -25,7 +25,7 @@ npx zenn new:article --slug example-article --publication-name overflow_offers
 
 ## 画像の追加
 
-`/images` ディレクトリ内に記事の slug と同名のディレクトリを作成し、その中に記事内で使用したい画像を配置、Markdown ファイルから参照してください。記事ごとにディレクトリでまとめたほうが管理が容易になります。
+`/images` ディレクトリ内に記事の slug と同名のディレクトリを作成し、その中に記事内で使用したい画像を配置、Markdown ファイルから参照してください。記事ごとにディレクトリでまとめておくと管理が容易になります。
 
 ```
 # 例
