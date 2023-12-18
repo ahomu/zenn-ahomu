@@ -173,9 +173,9 @@ packages 以下はインターナルパッケージとして pnpm の workspace 
 
 個人的に関わりのある Resilire さんで ADR の書き方を~~パクって~~学んできたので、後世に鋭いもので刺されないよう [ADR (Architecture Decision Record)](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) を書き溜めています。
 
-<!-- ADR については別の場所でケーススタディを紹介しているので、こちらの記事もよろしければご覧ください。 -->
+ADR については別の場所でケーススタディを紹介しているので、こちらの記事もよろしければご覧ください。
 
-<!-- TODO: 例の記事 URL を貼る -->
+https://resilire-engineer.hatenablog.com/entry/2023/12/18/163335
 
 # コンセプト「無難」
 
