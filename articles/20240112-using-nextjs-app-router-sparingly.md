@@ -81,7 +81,7 @@ export const dynamic = 'force-dynamic';
 
 `fetchCache` で例の fetch API のキャッシュを封じて、`dynamic` で static rendering を抑制して、オリジンには常に動的な生成を強制します。`dynamic = 'force-dynamic'` あたりは Pages Router からの移行パスとしても紹介されているくらいなので、今回のようなユースケースでは一応アリと思われます。
 
-最後に残るのが App Router くん、Cache-Control を任意でさせてくれない問題ですが、こちらは下記の記事のとおり middleware を使用して解決しています。
+App Router が Cache-Control を任意で指定させてくれない点は、こちらは下記の記事のとおり middleware で解決しています。
 
 https://havelog.aho.mu/develop/javascript/e791-nextjs_app_router_apply_cache_control_by_middleware.html
 
