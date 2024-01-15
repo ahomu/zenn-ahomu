@@ -87,7 +87,7 @@ https://havelog.aho.mu/develop/javascript/e791-nextjs_app_router_apply_cache_con
 
 ## ② `<Link>` を使わずソフトナビゲーションを封じる
 
-ナビゲーションは **Web ブラウザ (と CDN) を信じろ** を是として `<Link>` を使わないことで SPA 的な [Soft Navigations](https://github.com/WICG/soft-navigations) の代わりに MPA 的な従来的な動作を優先しています。画面遷移するたびにオンメモリな状態 etc を破棄できるのはある意味メリットでしょう。
+ナビゲーションは **Web ブラウザ (と CDN) を信じろ** を是として `<Link>` を使わないことで SPA 的な [Soft Navigations](https://github.com/WICG/soft-navigations) の代わりに MPA 的な従来動作を優先しています。画面遷移するたびにオンメモリな状態 etc を破棄できるのはある意味メリットでしょう。
 
 [react/forbid-elements](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/forbid-elements.md) で `import Link from 'next/link'` を想定した Component 名の安易な利用を抑制します。特別な事情で使う必要があるときは `Link as NecessaryLink` とでもします。
 
@@ -106,7 +106,7 @@ https://havelog.aho.mu/develop/javascript/e791-nextjs_app_router_apply_cache_con
 
 ## ③ `page.tsx` のみ明示的 Server Components として扱う
 
-今回は Ruby on Rails に根ざした GraphQL エンドポイントおよびその裏側の既存資産の流用が前提です。各所で宣言した GraphQL の Fragment[^4] を Server Components たる `page.tsx` に集約してクエリを送る Fragment Colocation パターンを採用しています。結果 `page.tsx` のみが Server Components として振る舞っています。
+今回は Ruby on Rails に根ざした GraphQL エンドポイントおよびその裏側の既存資産の流用が前提です。各所で宣言した GraphQL の Fragment[^4] を Server Components たる `page.tsx` に集約してクエリを送る Fragment Colocation パターンを採用しています。結果 `page.tsx` のみが Server Components として振る舞っています。`getServerSideProps` と同様のイメージです。
 
 React Server Components を活用して各所が自律的に fetch する構成も魅力的ではありましたが、現状の Storybook[^5] 等のエコシステムにおいては `page.tsx` 以下のコンポーネントを従来的な React Component として取り扱えるのも副次的なメリットです。
 
@@ -129,7 +129,7 @@ CloudFront を前提とした配信上の HTML キャッシュおよび HTML 生
 
 ## 依存のダメージコントロール
 
-依存パッケージの増加は本当に必要なものだけに極力留めたいことも根底にあります。例えば storybook や msw などの依存パッケージを Next.js と密に結合する形で導入することはメンテナンスの複雑性を加速度的に悪化させます。
+依存パッケージの増加は本当に必要なものだけに極力留めたいことも根底にあります。例えば storybook や msw などの依存パッケージを Next.js との組み合わせを"頑張って"導入することはメンテナンスの複雑性を加速度的に悪化させます。
 
 https://twitter.com/ahomu/status/1728038273250160778
 
