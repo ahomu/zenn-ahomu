@@ -52,7 +52,7 @@ https://pwanight.connpass.com/event/306410/
 
 AWS Lmabda 上での SSR を想定して成果物のファイルサイズやビルド・デプロイ・リリースの取り回しの良さも注目しています。結果として [AWS Lambda Web Adapter](https://github.com/awslabs/aws-lambda-web-adapter) を挟めばいずれも実行は問題なく、[AWS のブログ](https://aws.amazon.com/jp/blogs/news/implementing-ssr-streaming-on-nextjs-with-aws-lambda-response-streaming/) のとおり Next.js の Streaming SSR も対応できます。
 
-Next.js がなんだかんだ手堅く整備されていたことや `exports: standalone` による成果物を [fujiwara/lambroll](https://github.com/fujiwara/lambroll) で Lambda にアップロードするだけの爆速デプロイを簡潔に実現できた等の背景から Next.js に落ち着いています。[^2]
+Next.js がなんだかんだ手堅く整備されていたことや `output: standalone` による成果物を [fujiwara/lambroll](https://github.com/fujiwara/lambroll) で Lambda にアップロードするだけの爆速デプロイを簡潔に実現できた等の背景から Next.js に落ち着いています。[^2]
 
 [^2]: 気持ち的には Qwik 味見したかった...。
 
