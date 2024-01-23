@@ -12,6 +12,20 @@ published_at: 2023-10-03 09:00
 
 本記事は [Chrome Platform Status](https://chromestatus.com/features) からなんとなく Proposed/In Development なステータスのフィーチャーを取り上げて、そのプロポーザルを眺めてみるシリーズです。前回は [Media Queries Level 5 nav-controls](https://zenn.dev/overflow_offers/articles/20230224-media-queries-nav-controls) でした。
 
+# 追記
+
+## 2023.10.10  `form-sizing: fixed | content`
+
+紹介したそばから `normal` → `fixed` 、 `auto` → `content` に変更されていました。([IRCログ](https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1747803316)) 次項のサンプルコードは `normal | auto` のままですが使い方自体は変更されていないようです。
+
+`form-sizing` ではなく `field-sizing` というプロパティ名への変更も提案されていてポジティブな流れなので、そのうちこれも変更されるかもしれません。テーマ通りいかにも時期尚早な紹介といったオチでした。:)
+
+## 2024.01.23 `field-sizing`
+
+ということで前回の追記直後に `field-sizing` になっていました。観測はしていたのだけど追記忘れてたので今更ですが。whatwg のほうでも議論が継続していますね。
+
+https://github.com/whatwg/html/pull/9903
+
 # 入力量に応じて大きさが変わる textarea を CSS で
 
 :::message
@@ -43,12 +57,6 @@ https://github.com/tkent-google/explainers/blob/main/form-sizing.md
 また、本件と関連する話題として下記の issue も興味深そうなので機会を改めて言及するかもしれません。
 
 https://github.com/w3c/csswg-drafts/issues/7552
-
-# 2023.10.10 追記 `form-sizing: fixed | content`
-
-紹介したそばから `normal` → `fixed` 、 `auto` → `content` に変更されていました。([IRCログ](https://github.com/w3c/csswg-drafts/issues/7542#issuecomment-1747803316)) 次項のサンプルコードは `normal | auto` のままですが使い方自体は変更されていないようです。
-
-`form-sizing` ではなく `field-sizing` というプロパティ名への変更も提案されていてポジティブな流れなので、そのうちこれも変更されるかもしれません。テーマ通りいかにも時期尚早な紹介といったオチでした。:)
 
 # 本稿執筆時点で提案されている API
 
