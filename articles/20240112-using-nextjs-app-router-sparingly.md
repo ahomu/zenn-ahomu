@@ -18,9 +18,11 @@ published_at: 2024-01-12 09:30
 表題通り Next.js App Router をめっちゃ使いこなすぜイエー、という記事ではありません :)
 :::
 
-【AD?】今回の記事の内容を含んだり含まなかったりすると思いますが、来週 2024/01/17(水) 19:20 〜 オンライン開催の PWA Night vol.59 で発表予定なので興味のある方はぜひ。
+~~【AD?】今回の記事の内容を含んだり含まなかったりすると思いますが、来週 2024/01/17(水) 19:20 〜 オンライン開催の PWA Night vol.59 で発表予定なので興味のある方はぜひ。~~（終了済み）
 
-https://pwanight.connpass.com/event/306410/
+下記は本記事の内容を含むイベント発表資料です。ご参考までに。
+
+https://speakerdeck.com/ahomu/kong-emena-app-router-tochi-sok-ke-neng-nakai-fa
 
 ## 今回の前提
 
